@@ -1,74 +1,56 @@
-/* Reset CSS básico para remover margens e preenchimentos padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos globais */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
-
 header {
-    background-color: #ffffff;
+    background-color: #4CAF50;
     padding: 20px;
     text-align: center;
+    color: white;
 }
-
-header h1 {
-    color: #333;
+nav {
+    background-color: #333;
+    overflow: hidden;
 }
-
-nav ul {
-    list-style: none;
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
 }
-
-nav ul li {
-    display: inline;
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.container {
+    margin-top: 20px;
+    margin-left: 20px;
     margin-right: 20px;
 }
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-main {
-    padding: 20px;
-}
-
-.destaque {
-    background-color: #9bdb9f;
-    padding: 20px;
-    text-align: left;
-}
-
-.destaque h2 {
-    color: #333;
-}
-
-.produtos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-}
-
 .produto {
-    margin: 20px;
-    padding: 20px;
     border: 1px solid #ccc;
-    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
 }
-
-.produto img {
-    max-width: 100%;
+.produto h2 {
+    margin-top: 0;
 }
-
+.carrinho {
+    float: right;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+

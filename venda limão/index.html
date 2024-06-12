@@ -1,38 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venda de Limão</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Minha Loja de Limões</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .produto {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .produto h2 {
+            margin-top: 0;
+        }
+        .carrinho {
+            float: right;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Venda de Limões</h1>
-    
-    </header>
-    <main>
-        <section class="destaque">
-            <h2>Limão Tahiti</h2>
-            <h2>Limão Siciliano</h2>
-            <h2>Limão Galego</h2>
-            <h2>Limão Caviar</h2>
-            <h2>Limão Capim</h2>
-            <button></button>
-        </section>
-        <section class="produtos">
-            <h2>Nossos Produtos</h2>
-            <div class="produto">
-                <img src="limao.jpg" alt="Limão">
-                <h3>Limão Siciliano</h3>
-                <p>Rico em sabor e ideal para suas receitas.</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <!-- Outros produtos aqui -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Loja de Limões. Todos os direitos reservados.</p>
-    </footer>
+
+<header>
+    <h1>Minha Loja de Limões</h1>
+</header>
+
+<nav>
+    <a href="#precos">Preços</a>
+    <a href="#carrinho">Carrinho</a>
+    <a href="#pagamento">Formas de Pagamento</a>
+</nav>
+
+<div class="container" id="precos">
+    <div class="produto">
+        <h2>Limão Tahiti</h2>
+        <p>1kg</p>
+        <p>R$ 34,90</p>
+        <button>Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+        <h2>Limão Siciliano</h2>
+        <p>1kg</p>
+        <p>R$ 10,99</p>
+        <button>Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+        <h2>Limão Galego</h2>
+        <p>1kg</p>
+        <p>R$ 17,92</p>
+        <button>Adicionar ao carrinho</button>
+    </div>
+</div>
+
+<div class="container" id="carrinho">
+    <div class="carrinho">
+        <h2>Carrinho</h2>
+        <p>Limão Tahiti - R$ 34,90</p>
+        <p>Limão Siciliano - R$ 10,99</p>
+        <p>Limão Galego - R$ 17,92</p>
+        <p>Total: R$ 63,81</p>
+        <button>Finalizar compra</button>
+    </div>
+</div>
+
+<div class="container" id="pagamento">
+    <h2>Formas de Pagamento</h2>
+    <p>Cartão de Débito: ____________</p>
+    <p>Cartão de Crédito: ____________</p>
+    <p>Chave Pix: 365.462.598-56</p>
+</div>
+
+<footer>
+    <p>Volte sempre!</p>
+</footer>
+
 </body>
 </html>
